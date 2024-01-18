@@ -5,77 +5,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobile Version</title>
     <style>
+           *{
+            margin: 0;
+            padding: 0;
+     }
         body, html {
             width: 100%;
             overflow-x: hidden;
-            margin: 0;
-            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         #title {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
+            color: black;
+            margin-top: 20px; 
+            padding: 10px;
         }
 
         #subtitle {
-            background-color: #eee;
+            color: blue;
             padding: 10px;
         }
 
         #menu {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin-top: 50px;
         }
 
         #boxes {
-            padding: 20px;
+            margin-top: 20px;
         }
 
         .box {
-            margin-bottom: 20px;
-            padding: 10px;
-            background-color: #eee;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-        }
+         
+          margin-top: 10px;
+          font-size: 18px;
+        }  
+        
+        .box p { 
+         padding-right: 40px;
+          padding-left: 40px;
+          margin-top: 30px;
+         }
+        
+        #intro {  
+        margin-top: 10px;
+          padding-right: 30px;
+        padding-left: 30px;
+          color: blue;
+          font-size: 18px;
+         }
+        
+        button { 
+        width: 60%;
+          background-color: #fff;
+          padding: 5px; 
+          border:none;
+          transition: 0.3s;
+          font-weight:bold;
+         }
+         
+         button:hover {
+          background-color: yellow;
+          color: black;
+          }  
+          
+          .box h1 {
+            color: blue;
+            font-size: 24px;
+            padding-right: 30px;
+            padding-left: 30px;
+            margin-top: 50px; 
+            font-weight: bold;
+           }
     </style>
 </head>
 <body>
     <div id="title">
-        <h1>Mobile Version</h1>
+        <h1>AMALGAME</h1>
     </div>
 
     <div id="subtitle">
-        <h2>Simple One-Column Layout</h2>
+        <h2>27, 28 mars<br>pavillon lionel-groulx</h2>
+    </div>
+    
+    <div id="intro">
+        <p>Amalgame est une exposition organisée par l'association des étudiant.es en histoire de l'art de l'Univeristé de Montréal qui met de l'avant les pratiques artistiques d'étudiants inscrits
+        en histoire de l'art.<br><br>Vous trouverez toute l'information nécessaire pour participer a l'exposition ou pour nous visiter les 27 et 28 mars, lors des deux journées de l'événement.<br><br>
+        N'hésitez pas a contacter notre équipe si vous avez des questions, toutes les informations nécessaires sont disponibles dans la section "contactez-nous" de ce site web.</p>
     </div>
 
     <div id="menu">
-        <button onclick="navigateToBox(1)" ontouchstart="navigateToBox(1)">Button 1</button>
-        <button onclick="navigateToBox(2)" ontouchstart="navigateToBox(2)">Button 2</button>
-        <button onclick="navigateToBox(3)" ontouchstart="navigateToBox(3)">Button 3</button>
-        <button onclick="navigateToBox(4)" ontouchstart="navigateToBox(4)">Button 4</button>
-        <button onclick="navigateToBox(5)" ontouchstart="navigateToBox(5)">Button 5</button>
+        <button onclick="navigateToBox(1)" ontouchstart="navigateToBox(1)">A PROPOS</button>
+        <button onclick="navigateToBox(2)" ontouchstart="navigateToBox(2)">CANDIDATURE</button>
+        <button onclick="navigateToBox(3)" ontouchstart="navigateToBox(3)">ÉQUIPE</button>
+        <button onclick="navigateToBox(4)" ontouchstart="navigateToBox(4)">INFORMATIONS</button>
+        <button onclick="navigateToBox(5)" ontouchstart="navigateToBox(5)">CONTACTEZ-NOUS</button>
     </div>
 
     <div id="boxes">
         <div id="box1" class="box">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <h1>a propos</h1>
+            <p>Amalgame est une exposition organisée par l'association des étudiant.es en histoire de l'art de l'Univeristé de Montréal qui met de l'avant les pratiques artistiques d'étudiants inscrits
+        en histoire de l'art.<br><br>Vous trouverez toute l'information nécessaire pour participer a l'exposition ou pour nous visiter les 27 et 28 mars, lors des deux journées de l'événement.<br><br>
+        N'hésitez pas a contacter notre équipe si vous avez des questions, toutes les informations nécessaires sont disponibles dans la section "contactez-nous" de ce site web.</p>
         </div>
         <div id="box2" class="box">
-            <p>Text Box 2 - More content for the second box.</p>
+            <h1>candidature</h1>
+            <p>Amalgame est une exposition organisée par l'association des étudiant.es en histoire de l'art de l'Univeristé de Montréal qui met de l'avant les pratiques artistiques d'étudiants inscrits
+        en histoire de l'art.<br><br>Vous trouverez toute l'information nécessaire pour participer a l'exposition ou pour nous visiter les 27 et 28 mars, lors des deux journées de l'événement.<br><br>
+        N'hésitez pas a contacter notre équipe si vous avez des questions, toutes les informations nécessaires sont disponibles dans la section "contactez-nous" de ce site web.</p>
+        </div>
         </div>
         <div id="box3" class="box">
-            <p>Text Box 3 - Additional content for the third box.</p>
+            <h1>équipe</h1>
+            <p>Amalgame est une exposition organisée par l'association des étudiant.es en histoire de l'art de l'Univeristé de Montréal qui met de l'avant les pratiques artistiques d'étudiants inscrits
+        en histoire de l'art.<br><br>Vous trouverez toute l'information nécessaire pour participer a l'exposition ou pour nous visiter les 27 et 28 mars, lors des deux journées de l'événement.<br><br>
+        N'hésitez pas a contacter notre équipe si vous avez des questions, toutes les informations nécessaires sont disponibles dans la section "contactez-nous" de ce site web.</p>
+        </div>
         </div>
         <div id="box4" class="box">
-            <p>Text Box 4 - Different content for the fourth box.</p>
+            <h1>informations</h1>
+            <p>Amalgame est une exposition organisée par l'association des étudiant.es en histoire de l'art de l'Univeristé de Montréal qui met de l'avant les pratiques artistiques d'étudiants inscrits
+        en histoire de l'art.<br><br>Vous trouverez toute l'information nécessaire pour participer a l'exposition ou pour nous visiter les 27 et 28 mars, lors des deux journées de l'événement.<br><br>
+        N'hésitez pas a contacter notre équipe si vous avez des questions, toutes les informations nécessaires sont disponibles dans la section "contactez-nous" de ce site web.</p>
+        </div>
         </div>
         <div id="box5" class="box">
-            <p>Text Box 5 - Final content for the fifth box.</p>
+            <h1>contactez-nous</h1>
+            <p>Amalgame est une exposition organisée par l'association des étudiant.es en histoire de l'art de l'Univeristé de Montréal qui met de l'avant les pratiques artistiques d'étudiants inscrits
+        en histoire de l'art.<br><br>Vous trouverez toute l'information nécessaire pour participer a l'exposition ou pour nous visiter les 27 et 28 mars, lors des deux journées de l'événement.<br><br>
+        N'hésitez pas a contacter notre équipe si vous avez des questions, toutes les informations nécessaires sont disponibles dans la section "contactez-nous" de ce site web.</p>
+        </div>
         </div>
     </div>
 
@@ -84,6 +146,31 @@
             const box = document.getElementById(`box${boxNumber}`);
             box.scrollIntoView({ behavior: 'smooth' });
         }
+    </script>  
+    
+    <script>
+        function adjustFontSize() {
+            var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+            var fontSize = screenWidth / 15;
+            
+            document.getElementById('title').style.fontSize = fontSize + 'px';
+        }
+
+        adjustFontSize();
+        window.addEventListener('resize', adjustFontSize);
+    </script>
+    <script>
+        function adjustFontSize() {
+            var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+            var fontSize = screenWidth / 25;
+            
+            document.getElementById('subtitle').style.fontSize = fontSize + 'px';
+        }
+
+        adjustFontSize();
+        window.addEventListener('resize', adjustFontSize);
     </script>
 </body>
 </html>
