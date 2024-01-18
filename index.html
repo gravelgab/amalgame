@@ -4,39 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Website</title>
-    <script>
-        if (/Mobi|Android/i.test(navigator.userAgent)) {
-        window.location.href = "mobile.html";
-    }
-    </script>
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
-
-        #menu {
-            position: fixed;
-            top: 0;
-            right: 0;
-            padding: 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-        }
-
-        .box {
-            display: none;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            padding: 20px;
-            background-color: #fff;
-        }
-    </style>
+    <link rel="stylesheet" href="indexstyles.css">
 </head>
 <body>
     <div id="menu">
@@ -67,40 +35,7 @@
         <p>Text Box 5 - Final set of text for the last button.</p>
     </div>
 
-    <script>
-        let currentlyOpenBox = null;
-
-        function toggleBox(boxNumber) {
-            const box = document.getElementById(`box${boxNumber}`);
-
-            if (box === currentlyOpenBox) {
-                box.style.display = 'none';
-                currentlyOpenBox = null;
-            } else {
-                if (currentlyOpenBox) {
-                    currentlyOpenBox.style.display = 'none';
-                }
-
-                box.style.display = 'block';
-                currentlyOpenBox = box;
-            }
-        }
-
-        document.addEventListener('DOMContentLoaded', function () {
-            for (let i = 1; i <= 5; i++) {
-                const box = document.getElementById(`box${i}`);
-                box.addEventListener('click', function () {
-                    box.style.display = 'none';
-                    currentlyOpenBox = null;
-                });
-            }
-        });
-
-        window.addEventListener('resize', function () {
-            if (window.innerWidth < 1000) {
-                window.location.href = 'mobile.html'; 
-            }
-        });
-    </script>
+    <script src="indexscript.js"></script>
 </body>
 </html>
+
