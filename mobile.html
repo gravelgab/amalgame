@@ -76,10 +76,12 @@
             padding-left: 30px;
             margin-top: 50px; 
             font-weight: bold;
+            border-top: 1px solid blue;
            }
     </style>
 </head>
 <body>
+<a name="top"></a>
     <div id="title">
         <h1>AMALGAME</h1>
     </div>
@@ -89,53 +91,99 @@
     </div>
     
     <div id="intro">
-        <p>Amalgame est une exposition organisée par l'association des étudiant.es en histoire de l'art de l'Univeristé de Montréal qui met de l'avant les pratiques artistiques d'étudiants inscrits
-        en histoire de l'art.<br><br>Vous trouverez toute l'information nécessaire pour participer a l'exposition ou pour nous visiter les 27 et 28 mars, lors des deux journées de l'événement.<br><br>
-        N'hésitez pas a contacter notre équipe si vous avez des questions, toutes les informations nécessaires sont disponibles dans la section "contactez-nous" de ce site web.</p>
+        <p><br>Amalgame est une exposition éphémère organisée par l’Association des étudiant.es en histoire de l’art de l’Université de Montréal (AEEHAUM). 
+        <br><br>Elle présente la pratique artistique des éudiant.es du programme d’histoire de l’art, permettant à ces dernier-res de se réaliser en tant qu’artistes visuels 
+        en même temps qu’iels consacrent leur études à l’écriture et l’analyse historique des arts.
+        <br><br>Ouvert à tous les médiums artistiques, classiques ou contemporains, l'événement cherche à encourager la création artistique au sein d’un programme axé sur la théorie.
+        <br><br>Amalgame désire générer des connexions entre les élèves de l’université, concevant l’art comme un outil de rencontre et de discussion, capable de forger un esprit de communauté.</p>
     </div>
 
     <div id="menu">
-        <button onclick="navigateToBox(1)" ontouchstart="navigateToBox(1)">a propos</button>
-        <button onclick="navigateToBox(2)" ontouchstart="navigateToBox(2)">candidature</button>
-        <button onclick="navigateToBox(3)" ontouchstart="navigateToBox(3)">équipe</button>
-        <button onclick="navigateToBox(4)" ontouchstart="navigateToBox(4)">informations</button>
-        <button onclick="navigateToBox(5)" ontouchstart="navigateToBox(5)">contactez-nous</button>
+        <button onclick="navigateToBox(1)" ontouchstart="navigateToBox(1)">candidature</button>
+        <button onclick="navigateToBox(2)" ontouchstart="navigateToBox(2)">équipe</button>
+        <button onclick="navigateToBox(3)" ontouchstart="navigateToBox(3)">horaire</button>
+        <button onclick="navigateToBox(4)" ontouchstart="navigateToBox(4)">visiter l'expo</button>
     </div>
 
-    <div id="boxes">
+    <div id="boxes">  
+    
         <div id="box1" class="box">
-            <h1>a propos</h1>
-            <p>Amalgame est une exposition organisée par l'association des étudiant.es en histoire de l'art de l'Univeristé de Montréal qui met de l'avant les pratiques artistiques d'étudiants inscrits
-        en histoire de l'art.<br><br>Vous trouverez toute l'information nécessaire pour participer a l'exposition ou pour nous visiter les 27 et 28 mars, lors des deux journées de l'événement.<br><br>
-        N'hésitez pas a contacter notre équipe si vous avez des questions, toutes les informations nécessaires sont disponibles dans la section "contactez-nous" de ce site web.</p>
-        </div>
-        <div id="box2" class="box">
             <h1>candidature</h1>
-            <p>Amalgame est une exposition organisée par l'association des étudiant.es en histoire de l'art de l'Univeristé de Montréal qui met de l'avant les pratiques artistiques d'étudiants inscrits
-        en histoire de l'art.<br><br>Vous trouverez toute l'information nécessaire pour participer a l'exposition ou pour nous visiter les 27 et 28 mars, lors des deux journées de l'événement.<br><br>
-        N'hésitez pas a contacter notre équipe si vous avez des questions, toutes les informations nécessaires sont disponibles dans la section "contactez-nous" de ce site web.</p>
-        </div>
-        </div>
-        <div id="box3" class="box">
+            <p><br>Vous voulez participer à l'exposition en tant qu'artiste ? Rien de plus simple! Il suffit de nous envoyer votre dossier d'artiste en rassemblant les informations ci-dessous.
+        <br><br>Les dossiers sont à remettre au plus tard <b>le lundi 4 mars</b> à l'adresse suivante : <a href="mailto:rosalie.chartrand@umontreal.ca">rosaliechartrand@umontreal.ca</a>
+        <br><br>Votre dossier d'artiste doit contenir : 
+        <br><br><br><b>Prénom, Nom</b>
+        <br><b>Vos pronoms</b>
+        <br><br><br><b>Biographie</b>
+        <br>(100-400 mots)
+        <br>Vous pouvez parler de votre pratique artistique, vos intérêts, vos inspirations, les causes qui vous touchent, etc.
+        <br><br><br><b>Présentation de votre(vos) oeuvre(s)</b>
+        <br>(100-400 mots)
+        <br>Expliquez la réflexion derrière votre(vos) œuvre(s), votre cheminement de pensée, votre processus de création, ce qui vous a inspiré, etc.
+        <br><br><br><b>Fiche(s) technique(s)</b>
+        <br>Une fiche par oeuvre qui contient :
+        <br><br>- Titre
+        <br>- Année de création
+        <br>- Matériaux, support
+        <br>- Dimensions (en métrique... (m, cm, etc.))
+        <br><br>S’il s’agit d’une installation, fournissez un plan de l’installation et des photos des différents éléments utilisés dans l’installation.
+        <br><br>S’il s’agit d’une performance, fournissez une description détaillée, avec le minutage, la trame sonore, et les déplacements s’il y a lieux (dévis techinque).
+        <br><br><br><b>** Notez que les dossiers de candidatures incomplets ne seront pas pris en considération. **</b>
+        <br><br>Date limite pour soumettre votre dossier d'artiste : <b>lundi 4 mars</b>
+        <br><br>Pour toutes questions liées à votre canditature, contactez <a href="mailto:rosalie.chartrand@umontreal.ca">rosalie.chartrand@umontreal.ca</a>
+        <br><br><a href="#top" >retournez en haut de la page</a></p>
+       </div>
+        
+        <div id="box2" class="box">
             <h1>équipe</h1>
-            <p>Amalgame est une exposition organisée par l'association des étudiant.es en histoire de l'art de l'Univeristé de Montréal qui met de l'avant les pratiques artistiques d'étudiants inscrits
-        en histoire de l'art.<br><br>Vous trouverez toute l'information nécessaire pour participer a l'exposition ou pour nous visiter les 27 et 28 mars, lors des deux journées de l'événement.<br><br>
-        N'hésitez pas a contacter notre équipe si vous avez des questions, toutes les informations nécessaires sont disponibles dans la section "contactez-nous" de ce site web.</p>
+            <p><br>AMALGAME est réalisée par l'AEEHAUM, notre équipe est composée de : 
+        <br><br><b>Rosalie Blaney</b>
+        <br>Communications  
+        <br><br><b>Gabriel Chamard-Penserini</b>
+        <br>Montage
+        <br><br><b>Chloé Chamberland</b>
+        <br>Communications 
+        <br><br><b>Rosalie Chartrand</b>
+        <br>Commissaire
+        <br><br><b>Gabriel Gravel</b>
+        <br>Infographie, site web, comptabilité
+        <br><br><a href="#top" >retournez en haut de la page</a></p>
         </div>
+        
+        <div id="box3" class="box">
+            <h1>horaire</h1>
+            <p><br>Nous avons hâte de vous accueillir le mercredi 27 mars au local C-1070 du Pavillon Lionel-Groulx pour cette deuxieme édition d'AMALGAME!
+        <br><br><b>Mercredi 27 mars</b>
+        <br>10h00 : Ouverture de l'exposition
+        <br>18h00 : Début du vernissage
+        <br>22h00 : Fin du vernissage
+        <br><br>Pour toutes question au sujet de l'horaire, n'hésitez pas à contacter <a href="asso.har.udem@gmail.com">l'AEEHAUM</a>
+        <br><br><a href="#top" >retournez en haut de la page</a></p>
         </div>
+        
         <div id="box4" class="box">
-            <h1>informations</h1>
-            <p>Amalgame est une exposition organisée par l'association des étudiant.es en histoire de l'art de l'Univeristé de Montréal qui met de l'avant les pratiques artistiques d'étudiants inscrits
-        en histoire de l'art.<br><br>Vous trouverez toute l'information nécessaire pour participer a l'exposition ou pour nous visiter les 27 et 28 mars, lors des deux journées de l'événement.<br><br>
-        N'hésitez pas a contacter notre équipe si vous avez des questions, toutes les informations nécessaires sont disponibles dans la section "contactez-nous" de ce site web.</p>
+            <h1>visiter l'expo</h1>
+            <p><br>AMALGAME se déroulera au local C-1070 du Pavillon Lionel-Groulx de l'Université de Montréal. Pour plus d'informations concernant les heures d'ouverture de l'exposition, veuillez vous référer
+        à la section horaire du site web.
+        <br><br>Une fois sur place, il vous suffira de suivre les directions affichées par notre équipe.
+        <br><br><br><b>Pavillon Lionel-Groulx</b>
+        <br>3150
+        <br>rue Jean-Brillant
+        <br>Montréal
+        <br><br><b>Métro</b>
+        <br>Les stations de métro les plus proches du pavillon sont les stations
+        <br>Université de Montréal et Côte-des-Neiges
+        <br><br><b>Autobus</b>
+        <br>Les lignes 11, 51, 119, 166 et 368 passent à proximité du Pavillon Lionel-Groulx.
+        <br><br><b>Voiture</b>
+        <br>Pour celleux qui souhaitent se rendrent à l'exposition en voiture, le garage Louis-Colin offre un stationnement payant directement à côté du Pavillon Lionel-Groulx.
+        <br><br>
+        <br>Le Pavillon Lionel-Groulx ainsi que le local C-1070 sont accessibles pour les personnes à mobilité réduite ou en fauteuil roulant. Pour plus d'informations à ce sujet,
+        n'hésitez pas à contacter le bureau de la sûreté de l'Université de Montréal au 514 343-7771.
+        <br><br>Si vous avez d'autres questions concernant votre visite à l'exposition, n'hésitez pas à contacter <a href="asso.har.udem@gmail.com">l'AEEHAUM</a>
+        <br><br><a href="#top" >retournez en haut de la page</a></p></p>
         </div>
-        </div>
-        <div id="box5" class="box">
-            <h1>contactez-nous</h1>
-            <p>Amalgame est une exposition organisée par l'association des étudiant.es en histoire de l'art de l'Univeristé de Montréal qui met de l'avant les pratiques artistiques d'étudiants inscrits
-        en histoire de l'art.<br><br>Vous trouverez toute l'information nécessaire pour participer a l'exposition ou pour nous visiter les 27 et 28 mars, lors des deux journées de l'événement.<br><br>
-        N'hésitez pas a contacter notre équipe si vous avez des questions, toutes les informations nécessaires sont disponibles dans la section "contactez-nous" de ce site web.</p>
-        </div>
+         
         </div>
     </div>
 

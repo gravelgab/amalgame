@@ -3,17 +3,36 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+	background-image: url('background.png');
+            background-size: 945px 665px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
 }
 
 #menu {
     position: fixed;
-    top: 0;
     right: 0;
+    top: 50%;
     padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+	transform: translate(0, -50%);
 }
+
+button {
+	   background-color: #fff;
+	   border: none;
+	   margin: 10px;
+	   font-weight:bold;
+	   font-size: 20px;
+	   transition: 0.3s;
+ }
+ 
+ button:hover {
+ color: blue;
+  }
 
 .box {
     display: none;
@@ -23,4 +42,39 @@ body {
     transform: translate(-50%, -50%);
     padding: 20px;
     background-color: #fff;
+	overflow-y:auto;
+	height: auto;
+	max-height: 80vh;
+	border: 1px solid black;
 }
+
+#date {
+            position: absolute;
+            bottom: 0; 
+            right: 0;
+            font-size: 50px;
+            font-weight: bold;
+            color: blue; 
+            text-align:right;
+        }
+		
+#logo {
+            position: absolute;
+            top: 0; 
+            left: 0;
+            font-size: 100px;
+            font-weight: bold;
+            animation: colorChange 60s infinite;
+        } 
+         
+        @keyframes colorChange {
+            0% {
+                color: blue;
+            }
+            50% {
+                color: black;
+            }
+            100% {
+                color: blue;
+            }
+        }
