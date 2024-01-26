@@ -217,11 +217,21 @@
     </div>
 
     <script>
-        function navigateToBox(boxNumber) {
-            const box = document.getElementById(`box${boxNumber}`);
-            box.scrollIntoView({ behavior: 'smooth' });
+    var lastTouchTime = 0;
+
+    function navigateToBox(boxNumber) {
+        var currentTime = new Date().getTime();
+        if (currentTime - lastTouchTime < 500) { // Adjust the delay (in milliseconds) as needed
+            return;
         }
-    </script>  
+
+        lastTouchTime = currentTime;
+
+        const box = document.getElementById(`box${boxNumber}`);
+        box.scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
     
     <script>
         function adjustFontSize() {
