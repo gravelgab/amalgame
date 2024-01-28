@@ -17,6 +17,22 @@
             background-attachment: fixed;
 }
 
+	    #switchButton {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      padding: 10px;
+      background-color: #fff;
+      color: blue;
+      border: none;
+      cursor: pointer;
+    }
+	    #switchButton:hover {
+
+		    background-color: yellow;
+		    color: black;
+	    }
+
 #menu {
     position: fixed;
     right: 0;
@@ -93,6 +109,16 @@ button {
     <div id="logo">
     AMALGAME
     </div>
+
+
+	<button id="switchButton" onclick="redirectToMobile()">version mobile</button>
+
+  <script>
+    // Function to redirect to mobile.html
+    function redirectToMobile() {
+      window.location.href = 'mobile.html';
+    }
+  </script>
     
     <div id="date">
     mercredi 27 mars<br>C-1070, pavillon lionel-groulx
@@ -139,7 +165,7 @@ button {
         <br>- Matériaux, support
         <br>- Dimensions (en métrique... (m, cm, etc.))
         <br><br>S’il s’agit d’une installation, fournissez un plan de l’installation et des photos des différents éléments utilisés dans l’installation.
-        <br><br>S’il s’agit d’une performance, fournissez une description détaillée, avec le minutage, la trame sonore, et les déplacements s’il y a lieux (dévis techinque).
+        <br><br>S’il s’agit d’une performance, fournissez une description détaillée, avec le minutage, la trame sonore, et les déplacements s’il y a lieux (devis technique).
         <br><br><br><b>** Notez que les dossiers de candidatures incomplets ne seront pas pris en considération. **</b>
         <br><br>Date limite pour soumettre votre dossier d'artiste : <b>lundi 4 mars</b>
 	    <br><br>Les artistes selectionné.es doivent être disponibles à certaines dates importantes, veuillez vous référer à la section « calendrier » du site web pour prendre connaissance de ces dates.
@@ -257,6 +283,23 @@ window.addEventListener('resize', function () {
 });  
 
     </script>
+
+	<script>
+    // Function to check if the user is using a mobile device
+    function isMobileDevice() {
+      return /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    }
+
+    // Function to redirect to mobile.html if the device is a mobile
+    function redirectToMobile() {
+      if (isMobileDevice()) {
+        window.location.href = 'mobile.html';
+      }
+    }
+
+    // Call the redirection function on page load
+    window.onload = redirectToMobile;
+  </script>
 </body>
 </html>
 
