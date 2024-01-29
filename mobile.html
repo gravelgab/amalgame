@@ -21,11 +21,17 @@
             color: black;
             margin-top: 20px; 
             padding: 10px;
+		font-size: 80vw;
+    max-font-size: 48px; /* Set a maximum font size */
+    min-font-size: 12px;
         }
 
         #subtitle {
             color: blue;
             padding: 10px;
+				font-size: 50vw;
+    max-font-size: 18px; /* Set a maximum font size */
+    min-font-size: 12px;
         }
 
         #menu {
@@ -233,32 +239,6 @@
 </script>
 
     
-    <script>
-        function adjustFontSize() {
-            var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-
-            var fontSize = screenWidth / 15;
-            
-            document.getElementById('title').style.fontSize = fontSize + 'px';
-        }
-
-        adjustFontSize();
-        window.addEventListener('resize', adjustFontSize);
-    </script>
-    <script>
-        function adjustFontSize() {
-            var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-
-            var fontSize = screenWidth / 25;
-            
-            document.getElementById('subtitle').style.fontSize = fontSize + 'px';
-        }
-
-        adjustFontSize();
-        window.addEventListener('resize', adjustFontSize);
-        
-     
-    </script>
     <script> window.addEventListener('resize', function () {
     if (window.innerWidth > 600) {
         window.location.href = 'index.html';
